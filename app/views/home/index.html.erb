@@ -1,2 +1,6 @@
 <h1>Bienvenido a Mi Blog<h1>
 <p>Estamos trabajando para hacer algo bonito (o decente), por favor espere</p>
+<% @posts.each do |post| %>
+  <h6><%= post.title %></h6>
+  <%= post.text_body %>
+<% end %>
